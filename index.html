@@ -1,6 +1,51 @@
 <!DOCTYPE html>
-<html lang="en-US" class="cmsmasters_html js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" id="ls-global">
+<html lang="en">
 <head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 40px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 5px;
+  border-radius: 100%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+
+}
+</style>
+
     <!-- Basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">   
@@ -20,735 +65,7 @@
 		<title>Sudaksh - De Nayi Pehchan</title>
     <meta charset="utf-8">
 
-
-<style>
-div.example {
-}
-
-@media screen and (max-width: 300px) {
-  div.example {
-    display: none;
-  }
-}
-</style>
-
-<style>
-div.example2 {
-   display: none;
-}
-
-@media screen and (max-width: 600px) {
-  div.example2 {
-   .top-navbar .bg-light{
-  background: #f9f9f9 !important;
-  width: 100%;
-}
-
-.top-navbar .navbar-light .navbar-nav .nav-link{
-  color: #000000;
-}
-
-.top-navbar .navbar-light .navbar-nav .nav-item{
-  position: relative;
-  display: inline-block;
-  padding: 10px 1px;
-  margin: 0px 15px;
-}
-.top-navbar .navbar-light .navbar-nav .nav-item .nav-link{
-  padding: 6px 0px;
-  position: relative;
-  display: block;
-  line-height: 30px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.top-navbar .navbar-light .navbar-nav .nav-item::after {
-    position: absolute;
-    content: '';
-    left: 50%;
-    bottom: auto;
-    top: 11px;
-    width: 5px;
-  height: 5px;
-    opacity: 0;
-    margin-left: -3px;
-    background-color: #006900;
-  border-radius: 50px;
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-    transition: all 900ms ease;
-    -webkit-transition: all 900ms ease;
-    -ms-transition: all 900ms ease;
-    -o-transition: all 900ms ease;
-    -moz-transition: all 900ms ease;
-}
-
-.top-navbar .navbar-light .navbar-nav .nav-item .nav-link::before {
-    position: absolute;
-    content: '';
-    left: 0%;
-    bottom: auto;
-    top: -4px;
-    width: 5px;
-  height: 5px;
-  border-radius: 50px;
-    opacity: 0;
-    margin-left: -10px;
-    background-color: #006900;
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-    transition: all 900ms ease;
-    -webkit-transition: all 900ms ease;
-    -ms-transition: all 900ms ease;
-    -o-transition: all 900ms ease;
-    -moz-transition: all 900ms ease;
-}
-
-.top-navbar .navbar-light .navbar-nav .nav-item .nav-link::after {
-    position: absolute;
-    content: '';
-    right: 0%;
-    left: auto;
-    bottom: auto;
-    top: -4px;
-    width: 5px;
-  height: 5px;
-  border-radius: 50px;
-  border: none !important;
-    opacity: 0;
-    margin-right: -11px;
-    background-color: #006900;
-    transition: all 900ms ease;
-    -webkit-transition: all 900ms ease;
-    -ms-transition: all 900ms ease;
-    -o-transition: all 900ms ease;
-    -moz-transition: all 900ms ease;
-}
-
-.top-navbar .navbar-light .navbar-nav .nav-item.active::after{
-  opacity: 0.3;
-}
-
-.top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link::before {
-  opacity: 0.3;
-  left: 40%;
-}
-.top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link{
-  color: #eea412;
-}
-.top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link::after{
-  opacity: 0.3;
-  right: 40%;
-}
-
-.top-navbar .navbar-light .navbar-nav .nav-item:hover::after{
-  opacity: 1;
-}
-
-.top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover::before{
-  opacity: 1;
-  left: 40%;
-}
-.top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover{
-  color: #eea412;
-}
-.top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover::after{
-  opacity: 1;
-  right: 40%;
-}
-
-.dropdown:hover>.dropdown-menu {
-  display: block;
-}
-
-.dropdown>.dropdown-toggle:active {
-    pointer-events: none;
-}
-
-.dropdown:hover>.dropdown-menu .dropdown-item{
-  padding-left: 10px;
-}
-
-
-.top-navbar.fixed-menu .bg-light {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
-    visibility: visible;
-    transform: translate(0,0) scale(1);
-    transition: .3s;
-}
-
-.top-navbar .bg-light {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    box-shadow: 0 0 18px 0 rgba(0,0,0,.12);
-}
-
-.top-navbar .navbar-light .navbar-nav li .dropdown-menu {
-    box-shadow: 0 2px 12px 0 rgba(0,0,0,.12);
-    border: none;
-    border-radius: 0px;
-    margin: 0px;
-  padding: 10px;
-}
-
-.top-navbar .navbar-light .navbar-nav li .dropdown-menu a:hover{
-  background: #eea412;
-  color: #ffffff;
-}
-
-.navbar-right li a{
-  position: relative;
-  font-size: 18px;
-  display: inline-block;
-}
-.navbar-right li a,
-.navbar-right li a.hover-btn-new::after {
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.navbar-right li a.hover-btn-new::before,
-.navbar-right li a.hover-btn-new::after {
-  background: #eea412;
-  content: '';
-  position: absolute;
-  z-index: 1;
-}
-
-.navbar-right li a.hover-btn-new:hover span {
-  color: #ffffff;
-}
-.navbar-right li a.hover-btn-new::before {
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 100%;
-}
-.navbar-right li a.hover-btn-new::after {
-  background: #ffffff !important;
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 100%;
-}
-.navbar-right li a.hover-btn-new span{
-  position: relative;
-  z-index: 2;
-  color: #333333;
-}
-.navbar-right li a.hover-btn-new:hover:after {
-  height: 0;
-  left: 50%;
-  top: 50%;
-  width: 0;
-}
-
-
-.navbar-toggler{
-  background: #ffffff;
-  border-radius: 0px;
-  padding: 10px 10px;
-}
-
-.navbar-toggler .icon-bar {
-    display: block;
-    width: 22px;
-    height: 2px;
-    border-radius: 1px;
-  background: #333333;
-}
-.navbar-toggler .icon-bar + .icon-bar {
-    margin-top: 4px;
-}
-
-.navbar-toggler:hover{
-  background: #eea412;
-}
-
-.navbar-toggler:hover .icon-bar{
-  background: #ffffff;
-}
-
-
-.box-slider{
-  height: 100%;
-}
-
-
-.box-slider .carousel-control-prev{
-  border-radius: 2px;
-  background: #eea412;
-  position: absolute;
-  left: 0px;
-  font-size: 38px;
-  width: 60px;
-  height: 60px;
-  opacity: 1;
-}
-.box-slider .carousel-control-next{
-  border-radius: 2px;
-  background: #eea412;
-  position: absolute;
-  right: 0px;
-  font-size: 38px;
-  width: 60px;
-  height: 20px;
-  opacity: 1;
-}
-
-.first-section .big-tagline a{
-  background: none;
-  position: relative;
-  display: inline-block;
-  font-size: 18px;
-  color: #333333;
-  font-weight: 500;
-}
-
-
-.big-tagline a,
-.big-tagline a.hover-btn-new::after {
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.big-tagline a.hover-btn-new::before,
-.big-tagline a.hover-btn-new::after {
-  background: #fff;
-  content: '';
-  position: absolute;
-  z-index: 1;
-}
-
-.big-tagline a.hover-btn-new:hover span {
-  color: #eea412;
-}
-
-.hover-btn-new::before {
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 100%;
-}
-
-.hover-btn-new::after {
-  background: #eea412 !important;
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 100%;
-}
-.hover-btn-new span{
-  position: relative;
-  z-index: 2;
-}
-
-.hover-btn-new:hover:after {
-  height: 0;
-  left: 50%;
-  top: 50%;
-  width: 0;
-}
-
-
-.first-section .big-tagline a:hover{
-  color: #333333;
-}
-.box-slider .carousel-inner{
-  height: 100%;
-}
-.box-slider .carousel-item{
-  height: 100%;
-  width: 100%;
-}
-
-
-
-/*------------------------------------------------------------------
-    SECTIONS
--------------------------------------------------------------------*/
-
-.dbcolor{
-  background: #eea412;
-}
-
-.parallax {
-    background-attachment: fixed;
-    background-size: cover;
-    padding: 120px 0;
-    position: relative;
-    width: 100%;
-}
-
-.parallax.parallax-off {
-    background-attachment: fixed !important;
-    display: block;
-    overflow: hidden;
-    position: relative;
-    background-position: center center;
-    vertical-align: sub;
-    width: 100%;
-    z-index: 2;
-}
-
-.no-scroll-xy {
-    overflow: hidden !important;
-    -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -ms-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-}
-
-.section {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    padding: 70px 0;
-}
-
-.noover {
-    overflow: visible;
-}
-
-.noover .btn-dark {
-    border: 0 !important;
-}
-
-.nopad {
-    padding: 0;
-}
-
-.nopadtop {
-    padding-top: 0;
-}
-
-.section.wb {
-    background-color: #ffffff;
-}
-
-.section.lb {
-    background-color: #f2f3f5;
-}
-
-.section.db {
-    background-color: #1f1f1f;
-}
-
-.section.color1 {
-    background-color: #448AFF;
-}
-.section.cl {
-  background-color: #2d3032;
-}
-
-.hover-btn-new{
-  color: #ffffff;
-  display: inline-block;
-  font-weight: 400;
-  line-height: 46px;
-  padding: 0 17px;
-  text-transform: uppercase;
-  position: relative;
-  border: 2px solid #fff;
-  font-size: 14px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  border-radius: 2px;
-}
-
-.orange{
-  border-color: #eea412;
-}
-
-.first-section {
-    position: relative;
-    overflow: hidden;
-    height: 100%; 
-  vertical-align: middle;
-}
-
-.first-section::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-  top: 0px;
-  left: 0px;
-    display: block;
-    background: rgba(0,0,0,0.5);
-}
-
-.first-section h2 {
-    color: #ffffff;
-    font-size: 68px;
-    font-weight: 300;
-    text-transform: capitalize;
-    display: block;
-    margin: 0;
-    padding: 0 0 30px;
-    position: relative;
-}
-
-.first-section h2 strong{
-  color: #eea412;
-}
-
-.first-section .lead {
-    font-size: 21px;
-    font-weight: 300;
-    padding: 0 0 40px;
-    margin: 0;
-    line-height: inherit;
-    color: #ffffff;
-}
-
-.macbookright {
-    width: 980px;
-    position: absolute;
-    right: -15%;
-    bottom: -6%;
-}
-
-.section-title {
-    display: block;
-    position: relative;
-    margin-bottom: 60px;
-}
-
-.section-title p {
-    color: #999;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 33px;
-    margin: 0;
-}
-
-.section-title h3 {
-    font-size: 42px;
-    font-weight: 500;
-    line-height: 62px;
-    margin: 0 0 25px;
-    padding: 0;
-    text-transform: none;
-}
-
-.section.colorsection p,
-.section.colorsection h3,
-.section.db h3 {
-    color: #ffffff;
-}
-
-
-.box-slider .first-section{
-  display: table;
-  position: relative;
-  width: 100%;
-}
-.dtab{
-  display: table-cell;
-  vertical-align: middle;
-}
-
-
-.page-section{
-  padding: 70px 0px; 
-}
-
-.customwidget a{
-  position: relative;
-  padding: 13px 40px;
-  font-size: 18px;
-  display: inline-block;
-}
-
-
-.customwidget a,
-.customwidget a.hover-btn-new::after {
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.customwidget a.hover-btn-new::before,
-.customwidget a.hover-btn-new::after {
-  background: #9dc15b;
-  content: '';
-  position: absolute;
-  z-index: 1;
-}
-
-.customwidget a.hover-btn-new:hover span {
-  color: #333333;
-}
-.customwidget a.hover-btn-new::before {
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 100%;
-}
-.customwidget a.hover-btn-new::after {
-  background: #333333 !important;
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 100%;
-}
-.customwidget a.hover-btn-new span{
-  position: relative;
-  z-index: 2;
-  color: #fff;
-}
-.customwidget a.hover-btn-new:hover:after {
-  height: 0;
-  left: 50%;
-  top: 50%;
-  width: 0;
-}
-.message-box a{
-  position: relative;
-  font-size: 18px;
-  display: inline-block;
-}
-.message-box a,
-.message-box a.hover-btn-new::after {
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.message-box a.hover-btn-new::before,
-.message-box a.hover-btn-new::after {
-  background: #eea412;
-  content: '';
-  position: absolute;
-  z-index: 1;
-}
-
-.message-box a.hover-btn-new:hover span {
-  color: #333333;
-}
-.message-box a.hover-btn-new::before {
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 100%;
-}
-.message-box a.hover-btn-new::after {
-  background: #333333 !important;
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 100%;
-}
-.message-box a.hover-btn-new span{
-  position: relative;
-  z-index: 2;
-  color: #fff;
-}
-.message-box a.hover-btn-new:hover:after {
-  height: 0;
-  left: 50%;
-  top: 50%;
-  width: 0;
-}
-
-
-.customwidget{
-  margin-top: 30px;
-}
-
-.hmv-box{
-  padding: 60px 0px; 
-}
-.inner-hmv{
-  padding: 15px;
-  box-shadow: 0 0px 10px rgba(0,0,0,.1);
-  position: relative;
-  overflow: hidden;
-}
-.icon-box-hmv{
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
-  border: 3px solid #4babb1;
-  border-radius: 6px;
-  margin-bottom: 20px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.icon-box-hmv i{
-  font-size: 60px;
-  color: #eea412;
-}
-.inner-hmv h3{
-  font-size: 28px;
-  color: #212121;
-    font-weight: 500;
-  margin-bottom: 20px;
-  padding: 0px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.inner-hmv p{
-  margin: 0px;
-}
-
-.inner-hmv:hover .icon-box-hmv{
-  border: 3px solid #eea412;
-}
-.inner-hmv:hover .icon-box-hmv i{
-  color: #4babb1;
-}
-.inner-hmv:hover h3{
-  color: #eea412;
-}
-.tr-pa{
-  font-size: 170px;
-  color: #fbfbfb;
-    position: absolute;
-    top: -20px;
-    right: -10px;
-    line-height: 125px;
-  font-weight: 700;
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.inner-hmv:hover .tr-pa{
-  opacity: 1;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-  }
-}
-</style>
-
  	
-<link rel="stylesheet" media="screen and (max-width: 600px)" href="style.css">
-
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
@@ -756,46 +73,68 @@ div.example2 {
 <link rel="stylesheet" href="header_css/header_site.css" data-minify="1">
 <link rel="stylesheet" href="header_css/logo-inline.css" data-minify="1">
 
+<style>
+div.example {
+}
+
+@media screen and (max-width: 700px) {
+  div.example {
+    padding:40px;
+  }
+}
+</style>
+
+<style>
+div.mrgin {
+}
+
+@media screen and (max-width: 700px) {
+  div.mrgin {
+    padding:50px 50px ;
+  }
+}
+</style>
+
+
+
 <style id="woocommerce-inline-inline-css" type="text/css">.woocommerce form .form-row .required{visibility:visible}
 </style>
 <style id="charity-ngo-retina-inline-css" type="text/css">
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" id="google-fonts-css" href="header_css/css" type="text/css" media="all">
 
-      <link rel="stylesheet" type="text/css" href="css_full/imagehover.min.css">
+      <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
 
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  
-    <link rel="stylesheet" href="css_full/animate.css">
+    <link rel="stylesheet" href="css/animate.css">
     
-    <link rel="stylesheet" href="css_full/owl.carousel.min.css">
-    <link rel="stylesheet" href="css_full/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css_full/magnific-popup.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-    <link rel="stylesheet" href="css_full/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css_full/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
 
-    <link rel="stylesheet" href="css_full/flaticon.css">
-    <link rel="stylesheet" href="css_full/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,240,400,300,500,600,700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 			<!--
 			CSS
 			============================================= -->
-			<link rel="stylesheet" href="css_full/linearicons.css">
-			<link rel="stylesheet" href="css_full/font-awesome.min.css">
-			<link rel="stylesheet" href="css_full/magnific-popup.css">
-			<link rel="stylesheet" href="css_full/nice-select.css">
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">
 			<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-			<link rel="stylesheet" href="css_full/bootstrap.css">
-			<link rel="stylesheet" href="css_full/main.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/main.css">
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -843,32 +182,10 @@ div.example2 {
   color: white;
   transform: rotateY(180deg);
 }
+</style>
 
 
-.fa {
-  padding: ;
-  font-size: 22px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 1px;
-  border-radius: 50%;
-}
-
-.fa-hover {    opacity: 0.5;}
-
-.fa-facebook {  background:;  color: #3B5998;}
-
-.fa-twitter {  background:;  color: #55ACEE;}
-
-.fa-linkedin { color: #007bb5;}
-
-.fa-youtube { color: #bb0000;}
-
-.fa-instagram {  color: #125688;}
-
-.fa-pinterest {  color: #cb2027;}
-
+<style>
 .water{  }
 
 .education{ align: right;  }
@@ -879,158 +196,237 @@ div.example2 {
 
 
 </style>
+
+<style>
+
+* {
+
+box-sizing: border-box;
+
+}
+
+body {
+
+margin: 0
+
+}
+
+.main-nav {
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+width: 100%;
+
+margin: 0 ;
+
+background-color: #ffffff;
+
+padding: 0 30px;
+
+}
+
+.main-nav ul {
+
+display: flex;
+
+margin: 0;
+
+padding: 0;
+
+}
+
+.main-nav li {
+
+list-style: none;
+
+margin: 0;
+
+padding: 0;
+
+}
+
+.main-nav a {
+
+display: block;
+
+text-decoration: none;
+
+padding: 10px;
+
+color: #000000;
+
+}
+
+.logo {
+
+color: #fff;
+
+}
+
+.toggle-nav {
+
+display: none;
+
+}
+
+@media screen and (max-width: 768px) {
+
+.main-nav {
+
+font-size: 10px
+
+flex-direction: column;
+
+width: 100%;
+
+}
+
+.logo {
+
+display: flex;
+
+align-items: center;
+
+justify-content: space-between;
+
+width: 90%;
+
+order: -1;
+
+}
+
+.main-nav ul {
+
+display: none;
+
+}
+
+.toggle-nav {
+
+display: block;
+
+color: #ffffff;
+
+}
+
+.main-nav ul {
+
+width: 75%;
+
+}
+
+.main-nav a {
+
+width: 75%;
+
+text-align: center;
+
+}
+
+}
+
+</style>
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+$('.toggle-nav').css('cursor' , 'pointer').click(function(){
+
+$('.main-nav ul').slideToggle();
+
+});
+
+$(window).resize(function() {
+
+var width = $(document).width();
+
+if (width > 768) {
+
+$('.main-nav ul').css('display','flex');
+
+}
+
+if (width <= 768) {
+
+$('.main-nav ul').css('display','none');
+
+}
+
+});
+
+});
+
+</script>
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css_full/bootstrap.min.css">
-    <link rel="stylesheet" href="css_full/bootstrap.min_2.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min_2.css">
     <!-- Site CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- ALL VERSION CSS -->
-    <link rel="stylesheet" href="css_full/versions.css">
+    <link rel="stylesheet" href="css/versions.css">
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="css_full/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css_full/custom.css">
+    <link rel="stylesheet" href="css/custom.css">
 
     <!-- Modernizer for Portfolio -->
     <script src="js/modernizer.js"></script>
-
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="format-detection" content="telephone=no"><title>Sudaksh | De Nayi Pehchaan </title><link rel="stylesheet" href="A.7f56b12a4fb41fa0649728d170c5f921.css.pagespeed.cf.ZyLnRgC0P-.css" data-minify="1"><style id="woocommerce-inline-inline-css" type="text/css">.woocommerce form .form-row .required{visibility:visible}</style><style id="charity-ngo-retina-inline-css" type="text/css">@media only screen and (max-width:540px){.mailpoet_form{display:block!important;text-align:center!important}.mailpoet_paragraph{display:block!important}.mailpoet_submit{display:inline-block!important;left:0!important}}.contact_info{margin-top:10px}.contact_info>div+div{margin-top:18px}.contact_info>div:before{margin-left:0;margin-right:10px}.contact_info>div .locality{margin-left:-5px}.header_mid .header_mid_inner .logo_wrap{width:143px}.header_mid_inner .logo .logo_retina{width:114px;max-width:114px}</style>
-
-
 </head>
-
-
-
-<body class="home page-template-default page page-id-7366 woocommerce-js" data-gr-c-s-loaded="true">
-	<div class="ls-wp-container fitvidsignore ls-hidden ls-v6 ls-container ls-responsive" data-layerslider-uid="LSi5nrlz2ly">
-	    <div class="ls-slide" data-ls="duration:3000;timeshift:50;kenburnsscale:1.2;" style="width: 1920px; height: 850px;"></div>
-	    <div class="ls-slide" data-ls="duration:3000;timeshift:50;kenburnsscale:1.2;" style="width: 1920px; height: 850px;"></div>
-	    <div class="ls-slide" data-ls="duration:3000;timeshift:50;kenburnsscale:1.2;" style="width: 1920px; height: 850px;"></div>
-	    <div class="ls-slide" data-ls="duration:3000;timeshift:50;kenburnsscale:1.2;" style="width: 1920px; height: 850px;"></div>
-    </div>
-
-
-
-    <div id="page" class="csstransition cmsmasters_liquid fixed_header cmsmasters_heading_under_header hfeed site">
-    	<div id="main">
-<div class="example"> 
-    		<header id="header" class="header_fullwidth">
-    		<div class="header_mid" data-height="86" style="height: 60px; margin: 0px;">
-    			<div class="header_mid_background"></div><div class="header_mid_outer">
-    				<div class="header_mid_inner"><div class="logo_wrap"><a href="#" title="Sudaksh" class="logo"> 
-    					<img src="img/logo.png" alt="Sudaksh" class="lazyloaded" data-was-processed="true">
-    					<noscript>
-    						<img src="https://goonj.org/wp-content/uploads/2018/05/xgoonj-logo.png.pagespeed.ic.No_tUAtacG.webp" alt="Goonj"/>
-    					</noscript> 
-    					<img class="logo_retina" src="data:image/svg+xml,%3Csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20viewBox=&#39;0%200%20114%2068&#39;%3E%3C/svg%3E" alt="Goonj" width="114" height="68.5" data-lazy-src="https://goonj.org/wp-content/uploads/2018/05/goonj-logo.png">
-    					<noscript>
-    						<img class="logo_retina" src="https://goonj.org/wp-content/uploads/2018/05/114x69xgoonj-logo.png.pagespeed.ic.7a5hmeC0ea.webp" alt="Goonj" width="114" height="68.5"/>
-    					</noscript> </a></div>
-    					<div class="resp_mid_nav_wrap"><div class="resp_mid_nav_outer">
-    						<a class="responsive_nav resp_mid_nav" href="javascript:void(0);">
-    							<span>
-    							</span>
-    						</a>
-    					</div>
-    				</div>
-    					<div class="social_wrap"><div class="social_wrap_inner">
-    						<ul>
-    							<li> 
-    								<a href="#" class="fa fa-facebook" title="Facebook" target="_blank">    								
-    								</a>
-    							</li>
-    							<li> 
-    								<a href="#" class="fa fa-instagram" title="Instagram">    									
-    								</a>
-    							</li>
-    							<li> 
-    								<a href="#" class="fa fa-twitter" title="Twitter" target="_blank">    									
-    								</a>
-    							</li>
-    							<li> 
-    								<a href="#" class="fa fa-youtube" title="Youtube" target="_blank">
-    								</a>
-    							</li>
-    							<li> 
-    								<a href="#" class="fa fa-linkedin" title="linkedin" target="_blank">
-    								</a>
-    							</li>
-    						</ul>
-    					</div>
-    				</div>
-
-
-
-
-
-    				<div class="mid_nav_wrap">
-
-              <nav>
-                <div class="menu-my-custom-mene-container">
-
-			<ul id="navigation" class="mid_nav navigation">
+<body class="host_version"> 
+    
+	<!-- END LOADER -->	
 	
+	<!-- Start header -->
+<nav class="main-nav">
+<div class="logo">
 
-			<li id="menu-item-14350" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14350 menu-item-depth-0"><a href="https://goonj.org/#"><span class="nav_item_wrap"><span class="nav_title">Home</span></span></a></li>
+<img src="img/logo.png" height="75px" width=120px"/>
 
-			<li id="menu-item-14350" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14350 menu-item-depth-0"><a href="https://goonj.org/#"><span class="nav_item_wrap"><span class="nav_title">About Us</span></span></a></li>
+<div class="toggle-nav"><i class="fas fa-bars"></i></div>
 
-			<li id="menu-item-14364" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14364 menu-item-depth-0"><a href="https://goonj.org/impact"><span class="nav_item_wrap"><span class="nav_title">Impact</span></span></a></li>
+</div>
 
-			<li id="menu-item-14365" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14365 menu-item-depth-0"><a href="https://goonj.org/#"><span class="nav_item_wrap"><span class="nav_title">Interns Speak</span></span></a></li>
+<ul>
 
-			<li id="menu-item-15327" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15327 menu-item-depth-0"><a href="https://goonj.org/#"><span class="nav_item_wrap"><span class="nav_title">Contact Us</span></span></a></li>
 
+<li><a href="#"><font style="font-size:22px; color:#1c87c9; font-family:courier;"><b><pre> Home </pre></b></div></font></a></li>
+<li><a href="#"><font style="font-size:22px; color:#1c87c9; font-family:courier;"><b><pre> About Us </pre>  </b></div></font></a></li>
+<li><a href="#"><font style="font-size:22px; color:#1c87c9; font-family:courier;"><b><pre> Impact </pre></b></div></font></a></li>
+<li><a href="#"><font style="font-size:22px; color:#1c87c9; font-family:courier;"><b><pre> Interns </pre>  </b></div></font></a></li>
+<li><a href="#"><font style="font-size:22px; color:#1c87c9; font-family:courier;"><b><pre> Contact </pre></b></div></font></a></li>
 </ul>
-</div>
-</nav>
-</div>
-</div>
-</div>
-</div>
-</header>
-</div>
 
 
-<div class="example2">
-    <header class="top-navbar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="img/logo.png" alt="" />
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbars-host">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Interns</a></li>  
-            <li class="nav-item"><a class="nav-link" href="#"><font color="black">Contact</font></a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" data-toggle="modal" data-target="#login"><span><ul><a href="#" class="fa fa-facebook" title="Facebook" target="_blank"></a><a href="#" class="fa fa-instagram" title="Instagram"></a><a href="#" class="fa fa-linkedin" title="LinkedIn" target="_blank"></a><a href="#" class="fa fa-twitter" title="Twitter" target="_blank"></a><a href="#" class="fa fa-youtube" title="Youtube" target="_blank"></a><a href="tel:9876543210" class="fa fa-phone" title="Contact Us - 3258973289" target="_blank"></a></ul></span></a></li>
+  <ul>
+                        <li><span><ul><a href="#" class="fa fa-facebook" title="Facebook" target="_blank"></a><a href="#" class="fa fa-instagram" title="Instagram"></a><a href="#" class="fa fa-twitter" title="Twitter" target="_blank"></a><a href="#" class="fa fa-youtube" title="Youtube" target="_blank"></a><a href="tel:9876543210" class="fa fa-phone" title="Contact Us - 3258973289" target="_blank"></a></ul></span></a></li>
                     </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <br><br><br><br>
 
 
+
+</nav>
+<div class="example">
 </div>
 
-
+<!--------------------------------------------------------------->
+ 
+<div>
 <div class="carousel slide carousel-fadeOut" data-ride="carousel" data-interval="4000">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -1061,42 +457,42 @@ div.example2 {
     <span class="sr-only">Next</span>
   </a>
 </div>
+</div>
+<!-- Carousel ends here -->
 
 
-  </div></div>
+
 <br>
-  <!-- Start about Area -->
+<br>
+<!-- Start about Area -->
       <section class="about-area" id="about">
-				<div class="container-fluid">
-					<div class="row d-flex justify-content-end align-items-center">
-						<div class="col-lg-6 col-md-12 about-left no-padding">
-							<img class="img-fluid" src="img/about-img.jpg" alt="">
-						</div>
-						<div class="col-lg-6 col-md-12 about-right">
-							<h1>About Us </h1>
-							<p style="color:white">
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-							</p>
-							<div class="footer-social">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
-						</div>
-						</div>
-					</div>
-				</div>
-			</section>
+        <div class="container-fluid">
+          <div class="row d-flex justify-content-end align-items-center">
+            <div class="col-lg-6 col-md-12 about-left no-padding">
+              <div class="mrgin">
+              <img class="img-fluid" src="img/about-img.jpg" alt="">
+            </div>
+            </div>
+            <div class="col-lg-6 col-md-12 about-right">
+              <h1>About Us </h1>
+              <p>
+                About Us Content...!!!!
+              </p>
+              <div class="footer-social">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+              <a href="#"><i class="fa fa-behance"></i></a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- End about Area -->
-      
-      
-
 
       <!-- Start Our Impact Area -->
       <br><br>
-
-      <h2 id="impact" align="center">Impact</h2>
-      
+      <h2 align="center">Impact</h2>
       <hr align="center" width=50% height=5px>
       <br><br>
     <section id="courses" class="section-padding">
@@ -1112,7 +508,7 @@ div.example2 {
             <a href="#"></a>
           </figure>
         </div>
-        <div class="col-md-6 col-sm-8">
+        <div class="col-md-6 col-sm-8 ">
           <figure class="imghvr-fold-up">
             <img src="img/Education.jpg" class="img-responsive" height="500px">
             <figcaption>
@@ -1141,7 +537,7 @@ div.example2 {
         </div>
         <div class="col-md-6 col-sm-8 ">
           <figure class="imghvr-fold-up">
-            <img src="img/Environment.jpeg" class="img-responsive" height="500px">
+            <img src="img/Environment.jpg" class="img-responsive" height="500px">
             <figcaption>
               <h3>Environment</h3>
               <p>Air pollution, water pollution, garbage domestically prohibited goods and pollution of the natural environment are all major challenges for India. Sudaksh has initiated it's drive for this and people who are part of this impart environmental education and education through camps for teachers and students and conduct surveys on environment in villages of Uttarpradesh and Madhya Pradesh; they have made handmade dustbins in a locality of Madhya Pradesh to spread awareness on importance of cleanliness, had distributed cloth bags to people living in those villages and also they've conducted awareness programmes on the infectious diseases caused from unclean surroundings. Public interaction has played an integral role every time.The NGO has addressed the importance of waste segregation and making them know about the difference that exists between the two(green and blue) dustbins and how people could practice waste segregation at their own level. The NGO has also given its contribution in parks restoration and also promoted public to participate.</p>
@@ -1153,33 +549,248 @@ div.example2 {
     </div>
   </section>
       <br><br>
-	<!-- End of Impact Area-->
-	
-	<!-- Start Aim area -->
-     <section class="about-area" id="about">
-        <div class="container-fluid">
-          <div class="row d-flex justify-content-end align-items-center">
-            
-            <div class="col-lg-6 col-md-12 about-right">
-              <h1 id="about">Our Aim</h1>
-              <p style="color: white;">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-              </p>
-              <div class="footer-social">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-pinterest"></i></a>
-              <a href="#"><i class="fa fa-linkedin"></i></a>
-              <a href="#"><i class="fa fa-youtube"></i></a>
+
+    
+
+      <!-- Start Testimonial Area || Shubham Sharma -->
+      <section class="testimonial-area" id="testimonial">
+          <div class="container-fluid">
+            <h1 class="text-center mb-3">Interns Speak</h1>
+            <div id="myCarousel" class="mycarousel slide" data-ride="mycarousel">
+              <div class="mycarousel-inner row w-100 mx-auto justify-content-around">
+              <div class="mycarousel-item col-md-3 active">
+                <a data-toggle="modal" href="#intern1"><div class="card" style="background-color: transparent; border: 0px; padding: 10%;">
+                <img class="card-img-top img-fluid responsive imagedropshadow" src="img/intern/i1.jpg" alt="Card image cap" style="margin: 0 auto;">
+                <div class="card-body">
+                  <h4 class="card-title text-center" style="font-family: 'Caveat', cursive; font-size:30px">Intern Name 1</h4>
+                </div>
+                </div>
+              </a>
+              </div>
+              <div class="mycarousel-item col-md-3">
+                <a data-toggle="modal" href="#intern2">
+                <div class="card" style="background-color: transparent; border: 0px; padding: 10%;">
+                <img class="card-img-top img-fluid responsive imagedropshadow" src="img/intern/i2.jpg" alt="Card image cap" style="margin: 0 auto;">
+                <div class="card-body">
+                  <h4 class="card-title text-center" style="font-family: 'Caveat', cursive; font-size:30px">Intern Name 2</h4>
+                </div>
+                </div>
+              </a>
+              </div>
+              <div class="mycarousel-item col-md-3">
+                <a data-toggle="modal" href="#intern3">
+                <div class="card" style="background-color: transparent; border: 0px; padding: 10%;">
+                <img class="card-img-top img-fluid responsive imagedropshadow" src="img/intern/i3.jpg" alt="Card image cap" style="margin: 0 auto;">
+                <div class="card-body">
+                  <h4 class="card-title text-center" style="font-family: 'Caveat', cursive; font-size:30px">Intern Name 3</h4>
+                </div>
+                </div>
+                </a>
+              </div>
+              <div class="mycarousel-item col-md-3">
+                <a data-toggle="modal" href="#intern4"><div class="card" style="background-color: transparent; border: 0px; padding: 10%;">
+                <img class="card-img-top img-fluid responsive imagedropshadow" src="img/intern/i4.jpg" alt="Card image cap" style="margin: 0 auto;">
+                <div class="card-body">
+                  <h4 class="card-title text-center" style="font-family: 'Caveat', cursive; font-size:30px">Intern Name 4</h4>
+                </div>
+                </div>
+              </a>
+              </div>
+              <div class="mycarousel-item col-md-3">
+                <a data-toggle="modal" href="#intern5"><div class="card" style="background-color: transparent; border: 0px; padding: 10%;">
+                <img class="card-img-top img-fluid responsive imagedropshadow" src="img/intern/i5.jpg" alt="Card image cap" style="margin: 0 auto;">
+                <div class="card-body">
+                  <h4 class="card-title text-center" style="font-family: 'Caveat', cursive; font-size:30px">Intern Name 5</h4>
+                </div>
+                </div>
+              </a>
+              </div>
+              </div>
+              <div class="mycarouselControl">
+              <a class="mycarousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="mycarousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="mycarousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="mycarousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+                </a>
+              </div>
             </div>
             </div>
-            <div class="col-lg-6 col-md-12 about-left no-padding">
-              <img class="img-fluid" src="img/about-img.jpg" alt="">
+            <!-- Popup Modal for Intern 1 -->
+            <div class="modal fade" id="intern1" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                      <img class="content-image img-fluid s-block mx-auto imagedropshadow" src="img/intern/i1.jpg">
+                    </div>
+                    <div class="row-12 text-center"><br>
+                      <h3 style="font-family: 'Caveat', cursive; font-size:30px">Intern Name</h3><br>
+                    </div>
+                    <div class="col-12 text-justify">
+                      <h5 style="font-family: 'Patrick Hand', cursive;"><p>Hey everyone, this's Yogender.I did my internship with Sudaksh organization in December'2019. My experience is 10/10. I wasn't expecting this to an internship but this happened; be it traveling, be it food, be it the place we were residing, everything was so damn good! Talking about when we were going to public interactions, nukad naatak, plastic rallies, restoration of the parks and telling the people what is the difference that exists between the two dustbins, it was a difficult task, but when it is about to team it's nothing difficult. There's a difference between all time work in work and play in play but what I learnt in this internship is that work and play exist together. Thank you so much Sudaksh organization, thank you so much Anusha di for selecting me; and a big thumbs up to the team leader Mohit sir. I thank him. Under his guidance, we were able to do what we desired to. Everyone winning for the opportunity, do grab it, don't loose it, you'll regret it; and I give two big thumbs up to this organization, thank you so much.</p></h5>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <!-- Popup Modal for Intern 2 -->
+            <div class="modal fade" id="intern2" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                      <img class="content-image img-fluid s-block mx-auto imagedropshadow" src="img/intern/i2.jpg">
+                    </div>
+                    <div class="row-12 text-center"><br>
+                      <h3 style="font-family: 'Caveat', cursive; font-size:30px">Intern Name</h3><br>
+                    </div>
+                    <div class="col-12 text-justify">
+                      <h5 style="font-family: 'Patrick Hand', cursive;"><p>on having conversation with them we got to know that they found them fortunate enough to complete a *duration*  internship with this NGO Sudaksh De Nayi Pehchaan, an experience which was while challenging at times was invaluable in so many ways. They interned with a positive attitude,good work ethics and willingness to get involved wherever they were needed. They all have gained practical NGO based experience which also would be helpful in their future as volunteering internships allow you to work closely on important societal issues and let you contribute to the society. An NGO internship could be a chance to make new friends and get inspired by your fellow volunteers. This could play a significant role in building your character as you inculcate yourself, qualities like empathy, patience and optimism.</p></h5>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <!-- Popup Modal for Intern 3 -->
+            <div class="modal fade" id="intern3" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                      <img class="content-image img-fluid s-block mx-auto imagedropshadow" src="img/intern/i3.jpg">
+                    </div>
+                    <div class="row-12 text-center"><br>
+                      <h3 style="font-family: 'Caveat', cursive; font-size:30px">Intern Name</h3><br>
+                    </div>
+                    <div class="col-12 text-justify">
+                      <h5 style="font-family: 'Patrick Hand', cursive;"><p>Award 3 Description here An award, sometimes called a distinction, is something given to a recipient as a token of recognition of excellence in a certain field. When the token is a medal, ribbon or other item designed for wearing, it is known as a decoration.</p></h5>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <!-- Popup Modal for Intern 4 -->
+            <div class="modal fade" id="intern4" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                      <img class="content-image img-fluid s-block mx-auto imagedropshadow" src="img/intern/i4.jpg">
+                    </div>
+                    <div class="row-12 text-center"><br>
+                      <h3 style="font-family: 'Caveat', cursive; font-size:30px">Intern Name</h3><br>
+                    </div>
+                    <div class="col-12 text-justify">
+                      <h5 style="font-family: 'Patrick Hand', cursive;"><p>Award 3 Description here An award, sometimes called a distinction, is something given to a recipient as a token of recognition of excellence in a certain field. When the token is a medal, ribbon or other item designed for wearing, it is known as a decoration.</p></h5>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <!-- Popup Modal for Intern 5 -->
+            <div class="modal fade" id="intern5" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                      <img class="content-image img-fluid s-block mx-auto imagedropshadow" src="img/intern/i5.jpg">
+                    </div>
+                    <div class="row-12 text-center"><br>
+                      <h3 style="font-family: 'Caveat', cursive; font-size:30px">Intern Name</h3><br>
+                    </div>
+                    <div class="col-12 text-justify">
+                      <h5 style="font-family: 'Patrick Hand', cursive;"><p>Award 3 Description here An award, sometimes called a distinction, is something given to a recipient as a token of recognition of excellence in a certain field. When the token is a medal, ribbon or other item designed for wearing, it is known as a decoration.</p></h5>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+      </section>
+      <!-- End Testimonial Area -->
+
+      <!-- start footer Area || Shubham Sharma -->
+      <footer class="footer-area">
+        <div class="container">
+          <div class="row text-left disclaimer d-none d-sm-block">
+            <div class="col-12">
+            <h4 class="font-weight-bold light">Disclaimer</h4><br>  
+            <p class="text-justify">A pangram, or holoalphabetic sentence, is a sentence that contains every 
+              letter of the alphabet at least once. The most famous pangram is probably 
+              the thirty-five-letter-long “The quick brown fox jumps over the lazy 
+              dog,” which has been used to test typing equipment since at least the late 1800s.</p>
+            </div>
+          </div>
+          <div class="row text-center text-xs-center text-sm-left text-md-left">
+            <div class="col-xs-12 col-sm-6">
+              <h4 class="font-weight-bold light">Contact Us</h4><br>
+              <address><i class="material-icons">place</i>Tura Mandi Chowk, Najafagarh, New Delhi-110043</address>
+              <address><a href="mailto:sudakshngo@gmail.com" class="text-light"><i class="material-icons">mail</i>sudakshngo@gmail.com</a></address>
+              <address><a href="tel:+919210818788" class="text-light"><i class="material-icons">local_phone</i>+91 9210818788</a>, <a href="tel:+918802321777" class="text-light">+91 8802321777</a></address>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <h4 class="font-weight-bold light">Write Us</h4><br>
+              <script type="text/javascript">var submitted=false;</script>
+              <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+              onload="if(submitted) {$('#myModal1212').modal('show')}" data-toggle="modal"></iframe>
+              <div class="modal fade" id="myModal1212" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                  <div class="justify-content-end" style="padding: 10px;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body text-center">
+                  <h4><p class="text-success">Your message has been sent successfully.</p></h4>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfuucT03fLMMiWznZfdjt79ctn1hs8KUxQ-PdS7eG8nOGnTWw/formResponse" target="hidden_iframe" onsubmit="submitted=true;" method="POST" id="mG61Hd">
+                <div class="form-group">
+                  <label for="email">Email Address : </label>
+                  <input name="entry.526189910" type="email" class="form-control col-md-10" id="email" aria-describedby="emailHelp" placeholder="Enter Email Here" style="background: transparent; color: white; border-color: white;" required>
+                  <div class="invalid-feedback text-light">
+                  Please enter valid email.
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message : </label>
+                  <textarea name="entry.1373455198" class="form-control col-md-10" id="message" rows="5" placeholder="Enter Your Message Here" style="background: transparent; color: white; border-color: white;" required></textarea>
+                  <div class="invalid-feedback text-light">
+                    Please enter message to send.
+                  </div>
+                </div>
+                <button id="submitBtn" type="submit" class="btn btn-sm btn-light" style="background: transparent; color: white; border-color: white;">Send Message</button>
+                </form>
             </div>
           </div>
         </div>
-      </section>
-      <!-- End Aim area -->
+        <div class="copyright">
+          <div class="col-12">
+            &copy; 2020 - Sudaksh
+          </div>
+        </div>
+      </footer>
+      <!-- End footer Area -->
 
 
 
@@ -1205,7 +816,5 @@ div.example2 {
     <script src="js/all.js"></script>
     <!-- ALL PLUGINS -->
   
-
-
 </body>
 </html>
