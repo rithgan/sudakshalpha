@@ -4,6 +4,31 @@
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: white;
+}
+</style>
+
+<style>
+.circle_image {
+  border-radius: 100%;
+  width:250px;
+  box-decoration-break: 20px;
+  border:15px solid black";
+}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 .fa {
@@ -523,17 +548,18 @@ $('.main-nav ul').css('display','none');
 
 <br>
 <br>
+
 <!-- Start about Area -->
       <section class="about-area" id="about">
         <div class="container-fluid">
           <div class="row d-flex justify-content-end align-items-center">
             <div class="col-lg-6 col-md-12 about-left no-padding">
               <div class="mrgin">
-              <img class="img-fluid" src="img/about-img.jpg" alt="">
+              <img class="img-fluid" src="img/about-img.jpg" alt="" style="margin-top: 40px;margin-bottom: 40px; margin-left: 20px;" >
             </div>
             </div>
             <div class="col-lg-6 col-md-12 about-right">
-              <h1>About Us </h1>
+              <h1><font color="white"> About Us </font> </h1>
               <p>
                 About Us Content...!!!!
               </p>
@@ -617,7 +643,7 @@ $('.main-nav ul').css('display','none');
               <div class="mycarousel-inner row w-100 mx-auto justify-content-around">
               <div class="mycarousel-item col-md-3 active">
                 <a data-toggle="modal" href="#intern1"><div class="card" style="background-color: transparent; border: 0px; padding: 10%;">
-                <img class="card-img-top img-fluid responsive imagedropshadow" src="img/intern/i1.jpg" alt="Card image cap" style="margin: 0 auto;">
+                <img class="circle_image" src="img/intern/i1.jpg" alt="Card image cap" style="margin: 0 auto;">
                 <div class="card-body">
                   <h4 class="card-title text-center" style="font-family: 'Caveat', cursive; font-size:30px">Intern Name 1</h4>
                 </div>
@@ -627,7 +653,7 @@ $('.main-nav ul').css('display','none');
               <div class="mycarousel-item col-md-3">
                 <a data-toggle="modal" href="#intern2">
                 <div class="card" style="background-color: transparent; border: 0px; padding: 10%;">
-                <img class="card-img-top img-fluid responsive imagedropshadow" src="img/intern/i2.jpg" alt="Card image cap" style="margin: 0 auto;">
+                <img class="circle_image" src="img/intern/i2.jpg" alt="Card image cap" style="margin: 0 auto;">
                 <div class="card-body">
                   <h4 class="card-title text-center" style="font-family: 'Caveat', cursive; font-size:30px">Intern Name 2</h4>
                 </div>
@@ -637,7 +663,7 @@ $('.main-nav ul').css('display','none');
               <div class="mycarousel-item col-md-3">
                 <a data-toggle="modal" href="#intern3">
                 <div class="card" style="background-color: transparent; border: 0px; padding: 10%;">
-                <img class="card-img-top img-fluid responsive imagedropshadow" src="img/intern/i3.jpg" alt="Card image cap" style="margin: 0 auto;">
+                <img class="circle_image" src="img/intern/i3.jpg" alt="Card image cap" style="margin: 0 auto;">
                 <div class="card-body">
                   <h4 class="card-title text-center" style="font-family: 'Caveat', cursive; font-size:30px">Intern Name 3</h4>
                 </div>
@@ -646,7 +672,7 @@ $('.main-nav ul').css('display','none');
               </div>
               <div class="mycarousel-item col-md-3">
                 <a data-toggle="modal" href="#intern4"><div class="card" style="background-color: transparent; border: 0px; padding: 10%;">
-                <img class="card-img-top img-fluid responsive imagedropshadow" src="img/intern/i4.jpg" alt="Card image cap" style="margin: 0 auto;">
+                <img class="circle_image" src="img/intern/i4.jpg" alt="Card image cap" style="margin: 0 auto;">
                 <div class="card-body">
                   <h4 class="card-title text-center" style="font-family: 'Caveat', cursive; font-size:30px">Intern Name 4</h4>
                 </div>
@@ -655,7 +681,7 @@ $('.main-nav ul').css('display','none');
               </div>
               <div class="mycarousel-item col-md-3">
                 <a data-toggle="modal" href="#intern5"><div class="card" style="background-color: transparent; border: 0px; padding: 10%;">
-                <img class="card-img-top img-fluid responsive imagedropshadow" src="img/intern/i5.jpg" alt="Card image cap" style="margin: 0 auto;">
+                <img class="circle_image" src="img/intern/i5.jpg" alt="Card image cap" style="margin: 0 auto;">
                 <div class="card-body">
                   <h4 class="card-title text-center" style="font-family: 'Caveat', cursive; font-size:30px">Intern Name 5</h4>
                 </div>
@@ -824,16 +850,16 @@ $('.main-nav ul').css('display','none');
               <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfuucT03fLMMiWznZfdjt79ctn1hs8KUxQ-PdS7eG8nOGnTWw/formResponse" target="hidden_iframe" onsubmit="submitted=true;" method="POST" id="mG61Hd">
                 <div class="form-group">
                   <label for="email">Email Address : </label>
-                  <input name="entry.526189910" type="email" class="form-control col-md-10" id="email" aria-describedby="emailHelp" placeholder="Enter Email Here" style="background: transparent; color: white; border-color: white;" required>
+                  <input name="entry.526189910" type="email" class="form-control col-md-10" id="email" aria-describedby="emailHelp" placeholder="Enter Email Here" style="background: white; border-color: white;" required>
                   <div class="invalid-feedback text-light">
                   Please enter valid email.
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="message">Message : </label>
-                  <textarea name="entry.1373455198" class="form-control col-md-10" id="message" rows="5" placeholder="Enter Your Message Here" style="background: transparent; color: white; border-color: white;" required></textarea>
+                  <textarea name="entry.1373455198" class="form-control col-md-10" id="message" rows="5" placeholder="Enter Your Message Here" style="color: white; border-color: white;" required></textarea>
                   <div class="invalid-feedback text-light">
-                    Please enter message to send.
+                    <font color="white">Please enter message to send.</font>
                   </div>
                 </div>
                 <button id="submitBtn" type="submit" class="btn btn-sm btn-light" style="background: transparent; color: white; border-color: white;">Send Message</button>
