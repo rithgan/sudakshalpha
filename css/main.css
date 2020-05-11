@@ -146,13 +146,13 @@ address{
 }
 
 .form-control::-webkit-input-placeholder {
-  color: white;
-  opacity: 1; 
+  color: white !important;
+  opacity: 1 !important; 
 }
 
 .form-control::-moz-placeholder {
-  color: white;
-  opacity: 1; 
+  color: white !important;
+  opacity: 1 !important; 
 }
 
 .imagedropshadow {
@@ -161,7 +161,7 @@ address{
   -moz-box-shadow: 1px 1px 10px #999;
   -webkit-box-shadow: 1px 1px 10px #999;
   box-shadow: 1px 1px 10px #999;
-  border-radius: 50%;
+  border-radius: 50%  !important;
   max-height: 250px;
   max-width: 250px;
 }

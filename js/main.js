@@ -112,30 +112,3 @@ $(document).ready(function(){
  
 
 
- //testimonial - By Shubham Sharma - Do Not Remove
-
- $(document).ready(function() {
-  $("#myCarousel").on("slide.bs.mycarousel", function(e) {
-    var $e = $(e.relatedTarget);
-    var idx = $e.index();
-    var itemsPerSlide = 3;
-    var totalItems = $(".mycarousel-item").length;
-
-    if (idx >= totalItems - (itemsPerSlide - 1)) {
-      var it = itemsPerSlide - (totalItems - idx);
-      for (var i = 0; i < it; i++) {
-        // append slides to end
-        if (e.direction == "left") {
-          $(".mycarousel-item")
-            .eq(i)
-            .appendTo(".mycarousel-inner");
-        } else {
-          $(".mycarousel-item")
-            .eq(0)
-            .appendTo($(this).find(".mycarousel-inner"));
-        }
-      }
-    }
-  });
-});
-
