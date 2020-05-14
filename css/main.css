@@ -166,12 +166,10 @@ address{
   -webkit-box-shadow: 1px 1px 10px #999;
   box-shadow: 1px 1px 10px #999;
   border-radius: 50%  !important;
-  max-height: 250px;
-  max-width: 250px;
 }
 
-.internfont
+.card
 {
-  font-family: 'Patrick Hand', cursive;
+  padding: 0 20% 0 20%;
+  padding-top: 10px;
 }
-
