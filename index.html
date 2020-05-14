@@ -425,7 +425,7 @@ $('.main-nav ul').css('display','none');
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+      <script src="scroll.js"></script>
 </head>
 <body class="host_version"> 
 	<!-- Start header -->
@@ -457,12 +457,16 @@ $('.main-nav ul').css('display','none');
 <li><a href="#testimonial"><font style="font-size:22px; color:#1c87c9; font-family:courier;  "><b><pre> Interns </pre>  </b></div></font></a></li>
   
 
-<li><a href="#contact"><font style="font-size:22px; color:#1c87c9; font-family:courier;  "><b><pre> Contact </pre></b></div></font></a></li>
+<li><a href="#donate"><font style="font-size:22px; color:#1c87c9; font-family:courier;  "><b><pre> Donate </pre></b></div></font></a></li>
 </ul>
 
 <div class="scial_icon">
   <ul>
-                        <li><span><ul><a href="#" class="fa fa-facebook" title="Facebook" target="_blank"></a><a href="#" class="fa fa-instagram" title="Instagram"></a><a href="#" class="fa fa-twitter" title="Twitter" target="_blank"></a><a href="#" class="fa fa-youtube" title="Youtube" target="_blank"></a><a href="tel:9876543210" class="fa fa-phone" title="Contact Us - 3258973289" target="_blank"></a></ul></span></a></li>
+                        <li><span><ul><a href="#" class="fa fa-facebook" title="Facebook" target="_blank"></a>
+                          <a href="#" class="fa fa-instagram" title="Instagram" target="_blank"></a>
+                          <a href="#" class="fa fa-twitter" title="Twitter" target="_blank"></a>
+                          <a href="#" class="fa fa-youtube" title="Youtube" target="_blank"></a>
+                          <a href="#contact" class="fa fa-phone" title="Contact us" ></a></ul></span></a></li>
                     </ul>
 </div>
 
@@ -484,10 +488,30 @@ $('.main-nav ul').css('display','none');
 							<div class="main-menubar d-flex align-items-center">
 								<nav class="hide">
 									<a href="#">Home</a>
-									<a href="#about">About</a>
-									<a href="#project">Impact</a>
-									<a href="#testimonial">Interns</a>
-									<a href="#contact">Contact</a>
+                  <a href="#about">About</a>
+                  <script>
+                    document.querySelector('#about').scrollIntoView({ 
+                  behavior: 'smooth' 
+});
+                  </script>
+                  <a href="#project">Impact</a>
+                  <script>
+                    document.querySelector('#project').scrollIntoView({ 
+                  behavior: 'smooth' 
+});
+                  </script>
+                  <a href="#testimonial">Interns</a>
+                  <script>
+                    document.querySelector('#testimonial').scrollIntoView({ 
+                  behavior: 'smooth' 
+});
+                  </script>
+                  <a href="#donate">Donate</a>
+                  <script>
+                    document.querySelector('#donate').scrollIntoView({ 
+                  behavior: 'smooth' 
+});
+                  </script>
 								</nav>
 								<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
 							</div>
@@ -596,7 +620,6 @@ $('.main-nav ul').css('display','none');
 
 <!-- Carousel ends here -->
 
-
 <!-- Start about Area -->
       <section class="about-area" id="about">
         <div class="container-fluid">
@@ -610,11 +633,16 @@ $('.main-nav ul').css('display','none');
          	
               <h1><font color="white"> About Us </font> </h1>
               <p>
-              	<font color="white"> About Us<br>
-                About Us Content goes here<br>
-                About Us Content goes here<br>
-                About Us Content goes here<br>
-                About Us Content goes here</font>
+              	<font color="white"  style="font-size:17.5px"> The idea to start off Sudaksh, De nayi Pehchan (Non Government Organisation) by five community members  - Mohit Bansal, Harish Gupta, Amit Kumar, Ram Narayan Sharma and Rajesh Sherawat. 
+                  <br>
+                  
+                  The ideology behind to start the NGO to give overall development to underprivileged children, special children, financially backward people and also the old - age people. 
+                  <br>
+                 
+                  At the same time, NGO focused on environmental issues as well such as environmental health, waste segregation and insisting people to follow the same. 
+                  <br>  
+                  Sudaksh organised many programmes like distributing books, food, clothes and medicines, organizing free classes, health check ups and did street plays on various social issues to aware the society.
+              </font>
               </p>
               
   <ul>
@@ -723,7 +751,6 @@ $('.main-nav ul').css('display','none');
                 </a>
              </div>
           </div>
-          
         </div>
         <div class="col-lg-6 col-md-6 project-wrap">
           <div class="single-project">
@@ -740,7 +767,7 @@ $('.main-nav ul').css('display','none');
                 </a>
              </div>
           </div>
-
+          
           
         </div>
         <div class="col-lg-6 col-md-6 project-wrap">
@@ -771,7 +798,7 @@ $('.main-nav ul').css('display','none');
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <div class="row justify-content-center">
             <div class="col-12 text-center">
-              <img class="content-image img-fluid s-block mx-auto imagedropshadow" src="img/intern/i1.jpg">
+              <img class="content-image img-fluid s-block mx-auto " src="img/Education.jpg">
             </div>
             <div class="row-12 text-center"><br>
               <h3 style="font-family: 'Caveat', cursive; font-size:30px">Education</h3><br>
@@ -792,13 +819,15 @@ $('.main-nav ul').css('display','none');
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <div class="row justify-content-center">
             <div class="col-12 text-center">
-              <img class="content-image img-fluid s-block mx-auto imagedropshadow" src="img/intern/i1.jpg">
+              <img class="content-image img-fluid s-block mx-auto " src="img/Environment.jpg">
             </div>
             <div class="row-12 text-center"><br>
               <h3 style="font-family: 'Caveat', cursive; font-size:30px">Enviornment</h3><br>
             </div>
             <div class="col-12 text-justify">
-              <h5 style="font-family: 'Patrick Hand', cursive;"><p>Hey everyone, this's Yogender.I did my internship with Sudaksh organization in December'2019. My experience is 10/10. I wasn't expecting this to an internship but this happened; be it traveling, be it food, be it the place we were residing, everything was so damn good! Talking about when we were going to public interactions, nukad naatak, plastic rallies, restoration of the parks and telling the people what is the difference that exists between the two dustbins, it was a difficult task, but when it is about to team it's nothing difficult. There's a difference between all time work in work and play in play but what I learnt in this internship is that work and play exist together. Thank you so much Sudaksh organization, thank you so much Anusha di for selecting me; and a big thumbs up to the team leader Mohit sir. I thank him. Under his guidance, we were able to do what we desired to. Everyone winning for the opportunity, do grab it, don't loose it, you'll regret it; and I give two big thumbs up to this organization, thank you so much.</p></h5>
+              <h5 style="font-family: 'Patrick Hand', cursive;">
+                <p>Air pollution, water pollution, garbage domestically prohibited goods and pollution of the natural environment are all major challenges for India. Sudaksh has initiated it's drive for this and people who are part of this impart environmental education and education through camps for teachers and students and conduct surveys on environment in villages of Uttarpradesh and Madhya Pradesh; they have made handmade dustbins in a locality of Madhya Pradesh to spread awareness on importance of cleanliness, had distributed cloth bags to people living in those villages and also they've conducted awareness programmes on the infectious diseases caused from unclean surroundings. Public interaction has played an integral role every time.The NGO has addressed the importance of waste segregation and making them know about the difference that exists between the two(green and blue) dustbins and how people could practice waste segregation at their own level. The NGO has also given its contribution in parks restoration and also promoted public to participate.</p>
+              </h5>
             </div>
           </div>
         </div>
@@ -813,13 +842,15 @@ $('.main-nav ul').css('display','none');
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <div class="row justify-content-center">
             <div class="col-12 text-center">
-              <img class="content-image img-fluid s-block mx-auto imagedropshadow" src="img/intern/i1.jpg">
+              <img class="content-image img-fluid s-block mx-auto" src="img/Water.jpg">
             </div>
             <div class="row-12 text-center"><br>
               <h3 style="font-family: 'Caveat', cursive; font-size:30px">Water</h3><br>
             </div>
             <div class="col-12 text-justify">
-              <h5 style="font-family: 'Patrick Hand', cursive;"><p>Hey everyone, this's Yogender.I did my internship with Sudaksh organization in December'2019. My experience is 10/10. I wasn't expecting this to an internship but this happened; be it traveling, be it food, be it the place we were residing, everything was so damn good! Talking about when we were going to public interactions, nukad naatak, plastic rallies, restoration of the parks and telling the people what is the difference that exists between the two dustbins, it was a difficult task, but when it is about to team it's nothing difficult. There's a difference between all time work in work and play in play but what I learnt in this internship is that work and play exist together. Thank you so much Sudaksh organization, thank you so much Anusha di for selecting me; and a big thumbs up to the team leader Mohit sir. I thank him. Under his guidance, we were able to do what we desired to. Everyone winning for the opportunity, do grab it, don't loose it, you'll regret it; and I give two big thumbs up to this organization, thank you so much.</p></h5>
+              <h5 style="font-family: 'Patrick Hand', cursive;">
+                <p>while water is a sustainable resource, it's in the meantime a limited resource. Water is essential forever for life. Sudaksh de nayi Pehchaan has undertaken considerable grassroot level work towards water conservation and management in both rural and urban scenario. It has conducted several awareness programs in Uttar Pradesh, Madhya Pradesh, Delhi. Mass awareness is being spread by the organisation through various nukkad natak and awareness drives on water conservation and management with the active involvement of the public. Here the public interaction plays the vital role as to know about their current problems they're facing related to water depletion. As with all countries with excess water consumption depletes the overall water table. Rain water harvesting could be one solution for water collection. Collected water can be immediately used for agriculture, and with improved filtration practices to reduce water-borne pathogens, also quickly available for human consumption. The organization time to time carries out research and studies on the existence of the historical water bodies. The same time, the water bodies which have been enroached are saved through raising awareness amongst the local community.</p>
+              </h5>
             </div>
           </div>
         </div>
@@ -834,13 +865,15 @@ $('.main-nav ul').css('display','none');
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <div class="row justify-content-center">
             <div class="col-12 text-center">
-              <img class="content-image img-fluid s-block mx-auto imagedropshadow" src="img/intern/i1.jpg">
+              <img class="content-image img-fluid s-block mx-auto" src="img/Health.jpg">
             </div>
             <div class="row-12 text-center"><br>
               <h3 style="font-family: 'Caveat', cursive; font-size:30px">Health</h3><br>
             </div>
             <div class="col-12 text-justify">
-              <h5 style="font-family: 'Patrick Hand', cursive;"><p>Hey everyone, this's Yogender.I did my internship with Sudaksh organization in December'2019. My experience is 10/10. I wasn't expecting this to an internship but this happened; be it traveling, be it food, be it the place we were residing, everything was so damn good! Talking about when we were going to public interactions, nukad naatak, plastic rallies, restoration of the parks and telling the people what is the difference that exists between the two dustbins, it was a difficult task, but when it is about to team it's nothing difficult. There's a difference between all time work in work and play in play but what I learnt in this internship is that work and play exist together. Thank you so much Sudaksh organization, thank you so much Anusha di for selecting me; and a big thumbs up to the team leader Mohit sir. I thank him. Under his guidance, we were able to do what we desired to. Everyone winning for the opportunity, do grab it, don't loose it, you'll regret it; and I give two big thumbs up to this organization, thank you so much.</p></h5>
+              <h5 style="font-family: 'Patrick Hand', cursive;">
+                <p>In India, some of the best healthcare in the world is delivered through the private sector. Lack of hospitals, missing doctors, ill-equipped health professionals, and paucity of funds have dogged the Indian health sector for decades. Each year nearly 40 million Indians are thrown into poverty because of out of pocket health spending. Sudaksh has undertaken its initiative for getting these disparities removed. It has conducted some healthcare activities and public awareness programmes in rural areas of Uttar Pradesh, Madhya Pradesh; in these programmes the free medicines, face masks were distributed among the people living there. Awareness programmes have been conducted to present some facts like diarrheal diseases are the primary causes of early childhood mortality, these diseases can be attributed to poor sanitation and inadequate safe drinking water. India has the world's highest incidence of rabies.The primary focus of the organisation is to fulfil the basic health and social needs of underprivileged sections of the society like poor, women, elderly, children etc. Sudaksh is continuously scouting the people living here and even providing them with the basic healthcare treatments and medicines.</p>
+              </h5>
             </div>
           </div>
         </div>
@@ -848,10 +881,97 @@ $('.main-nav ul').css('display','none');
       </div>
     </div>
   </section>
+      
+
+
+  <!-- Start our aim Area -->
+  <section class="about-area" id="about">
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-end align-items-center">
+        <div class="col-lg-6 col-md-12 about-right no-padding">
+          <div class="mrgin">
+          <img class="img-fluid" src="img/our-aim.jpg" alt="" style="height: 400px; ">
+        </div>
+        </div>
+        <div class="col-lg-6 col-md-12 about-right">
+       
+          <h1><font color="white"> Our Aim </font> </h1>
+          <p>
+            <font color="white" style="font-size:20px"> Our only aim is to develop underprivileged society, so they can come forward, and to help old people so they can live with self confidence, and at the same time to help nature heeling so we can secure our future..
+          </font>
+          </p>
+          
+<ul>
+                    <li><span><ul><a href="#" class="fa fa-facebook" title="Facebook" target="_blank"></a><a href="#" class="fa fa-instagram" title="Instagram"></a><a href="#" class="fa fa-twitter" title="Twitter" target="_blank"></a><a href="#" class="fa fa-youtube" title="Youtube" target="_blank"></a><a href="tel:9876543210" class="fa fa-phone" title="Contact Us - 3258973289" target="_blank"></a></ul></span></a></li>
+                </ul>
+           </div>
+      </div>
+    </div>
+  </section>
+  <!-- End our aim Area -->
+
+    <!-- Start donate Area -->
+			<section class="donate-area relative section-gap" id="donate">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row d-flex justify-content-end">
+						<div class="col-lg-6 col-sm-12 pb-80 header-text" style="padding-bottom:10px">
+							<h1 style="margin-bottom:0px">Donate Now</h1>
+							<p>
+								Donate now to support the cause
+							</p>
+						</div>
+					</div>
+					<div class="row d-flex justify-content-center">
+						<div class="col-lg-6 contact-left">
+							<div class="single-info">
+								<h4>Divided Evenly</h4>
+								<p>
+									inappropriate behavior is often laughed off as “boys will be boys,” <br> women face higher conduct women face higher conduct.
+								</p>
+							</div>
+							<div class="single-info">
+								<h4>Transperancy All the Way</h4>
+								<p>
+									inappropriate behavior is often laughed off as “boys will be boys,” <br> women face higher conduct women face higher conduct.
+								</p>
+							</div>
+							<div class="single-info">
+								<h4>Trustworthy</h4>
+								<p>
+									inappropriate behavior is often laughed off as “boys will be boys,” <br> women face higher conduct women face higher conduct.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-6 contact-right">
+								 	<div class="row">
+								 		<div class="col-lg-12 d-flex flex-column">
+							 				<h3 style="color: #e4f5f5">Account Details</h3>
+                     </div>
+                     <div class="col-lg-12 d-flex flex-column">
+                      <p style="color: #e4f5f5">Bank Name: State Bank of India</p>
+                    </div>
+							 			<div class="col-lg-12 d-flex flex-column">
+                       <p style="color: #e4f5f5">Branch: Roshan Mandi, Najafagarh, Delhi-110043</p>
+                    </div>
+                   
+                    <div class="col-lg-12 d-flex flex-column">
+                    <p style="color: #e4f5f5">Name: Sudaksh: De Nayi Pehchan</p>
+                    </div>	
+                    <div class="col-lg-12 d-flex flex-column">
+                      <p style="color: #e4f5f5">IFSC Code: SBIN0032691</p>
+                     </div>	
+                    <div class="col-lg-12 d-flex flex-column">
+                       <p style="color: #e4f5f5">MICR Code: 110002844</p>
+                    </div>
+									</div>
+						</div>
+					</div>
+				</div>
+			</section>
+      <!-- End donate Area -->
+      
       <br><br>
-
-    
-
       <!-- Start Testimonial Area || Shubham Sharma -->
       <section class="testimonial-area" id="testimonial">
             <div class="container-fluid">
@@ -925,7 +1045,9 @@ $('.main-nav ul').css('display','none');
                       <h3 style="font-family: 'Caveat', cursive; font-size:30px">Heena</h3><br>
                     </div>
                     <div class="col-12 text-justify">
-                      <h5 style="font-family: 'Patrick Hand', cursive;"><p>Hey everyone, this's Yogender.I did my internship with Sudaksh organization in December'2019. My experience is 10/10. I wasn't expecting this to an internship but this happened; be it traveling, be it food, be it the place we were residing, everything was so damn good! Talking about when we were going to public interactions, nukad naatak, plastic rallies, restoration of the parks and telling the people what is the difference that exists between the two dustbins, it was a difficult task, but when it is about to team it's nothing difficult. There's a difference between all time work in work and play in play but what I learnt in this internship is that work and play exist together. Thank you so much Sudaksh organization, thank you so much Anusha di for selecting me; and a big thumbs up to the team leader Mohit sir. I thank him. Under his guidance, we were able to do what we desired to. Everyone winning for the opportunity, do grab it, don't loose it, you'll regret it; and I give two big thumbs up to this organization, thank you so much.</p></h5>
+                      <h5 style="font-family: 'Patrick Hand', cursive;">
+                        <p>on having conversation with them we got to know that they found them fortunate enough to complete a *duration*  internship with this NGO Sudaksh De Nayi Pehchaan, an experience which was while challenging at times was invaluable in so many ways. They interned with a positive attitude,good work ethics and willingness to get involved wherever they were needed. They all have gained practical NGO based experience which also would be helpful in their future as volunteering internships allow you to work closely on important societal issues and let you contribute to the society. An NGO internship could be a chance to make new friends and get inspired by your fellow volunteers. This could play a significant role in building your character as you inculcate yourself, qualities like empathy, patience and optimism.</p>
+                      </h5>
                     </div>
                   </div>
                 </div>
@@ -946,7 +1068,9 @@ $('.main-nav ul').css('display','none');
                       <h3 style="font-family: 'Caveat', cursive; font-size:30px">Yogender</h3><br>
                     </div>
                     <div class="col-12 text-justify">
-                      <h5 style="font-family: 'Patrick Hand', cursive;"><p>on having conversation with them we got to know that they found them fortunate enough to complete a *duration*  internship with this NGO Sudaksh De Nayi Pehchaan, an experience which was while challenging at times was invaluable in so many ways. They interned with a positive attitude,good work ethics and willingness to get involved wherever they were needed. They all have gained practical NGO based experience which also would be helpful in their future as volunteering internships allow you to work closely on important societal issues and let you contribute to the society. An NGO internship could be a chance to make new friends and get inspired by your fellow volunteers. This could play a significant role in building your character as you inculcate yourself, qualities like empathy, patience and optimism.</p></h5>
+                      <h5 style="font-family: 'Patrick Hand', cursive;">
+                        <p>Hey everyone, this's Yogender.I did my internship with Sudaksh organization in December'2019. My experience is 10/10. I wasn't expecting this to an internship but this happened; be it traveling, be it food, be it the place we were residing, everything was so damn good! Talking about when we were going to public interactions, nukad naatak, plastic rallies, restoration of the parks and telling the people what is the difference that exists between the two dustbins, it was a difficult task, but when it is about to team it's nothing difficult. There's a difference between all time work in work and play in play but what I learnt in this internship is that work and play exist together. Thank you so much Sudaksh organization, thank you so much Anusha di for selecting me; and a big thumbs up to the team leader Mohit sir. I thank him. Under his guidance, we were able to do what we desired to. Everyone winning for the opportunity, do grab it, don't loose it, you'll regret it; and I give two big thumbs up to this organization, thank you so much.</p>
+                      </h5>
                     </div>
                   </div>
                 </div>
