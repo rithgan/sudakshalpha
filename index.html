@@ -448,7 +448,7 @@ $('.main-nav ul').css('display','none');
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-      <script src="scroll.js"></script>
+      <script src="js/scroll.js"></script>
 </head>
 <body class="host_version"> 
 	<!-- Start header -->
@@ -511,30 +511,10 @@ $('.main-nav ul').css('display','none');
 							<div class="main-menubar d-flex align-items-center">
 								<nav class="hide">
 									<a href="#">Home</a>
-                  <a href="#about">About</a>
-                  <script>
-                    document.querySelector('#about').scrollIntoView({ 
-                  behavior: 'smooth' 
-});
-                  </script>
-                  <a href="#project">Impact</a>
-                  <script>
-                    document.querySelector('#project').scrollIntoView({ 
-                  behavior: 'smooth' 
-});
-                  </script>
-                  <a href="#testimonial">Interns</a>
-                  <script>
-                    document.querySelector('#testimonial').scrollIntoView({ 
-                  behavior: 'smooth' 
-});
-                  </script>
-                  <a href="#donate">Donate</a>
-                  <script>
-                    document.querySelector('#donate').scrollIntoView({ 
-                  behavior: 'smooth' 
-});
-                  </script>
+                  <a onclick="about()">About</a>
+                  <a onclick="project()">Impact</a>
+                  <a onclick="testimonial()" >Interns</a>
+                  <a onclick="donate()">Donate</a>
 								</nav>
 								<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
 							</div>
