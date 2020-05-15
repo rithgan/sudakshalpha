@@ -173,3 +173,12 @@ address{
   padding: 0 20% 0 20%;
   padding-top: 10px;
 }
+
+
+.impactslogan
+{
+  font-size: 40px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
