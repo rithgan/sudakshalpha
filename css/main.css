@@ -3000,3 +3000,7 @@ address {
   text-decoration: none;
   color: white;
 }
+
+.intern-width{
+  max-width: 50% !important;
+}
