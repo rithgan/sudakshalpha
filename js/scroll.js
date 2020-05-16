@@ -26,3 +26,10 @@ function donate(){
     behavior:"smooth"
   });
 }
+
+function contact(){
+  let elmnt = document.getElementById("contact");
+  elmnt.scrollIntoView({
+    behavior:"smooth"
+  });
+}
